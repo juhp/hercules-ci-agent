@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
  - `hci lock` subcommands for optional cloud locks, to be used in conjunction with state, but not enforced.
 
+ - `hci state get --version INT` added, to retrieve a specific revision of a remote state file.
+
 ## 0.2.1 - 2021-06-22
 
 ### Added
