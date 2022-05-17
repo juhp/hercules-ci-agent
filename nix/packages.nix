@@ -27,7 +27,7 @@ let
     overrideCabal
     overrideSrc
     ;
-  callPkg = super: name: srcPath: args: overrideSrc (super.callCabal2nix name srcPath args) { src = srcPath; };
+  callPkg = super: name: srcPath: args: overrideSrc (super.callCabal2nixWithOptions name srcPath "--maintainer roberth" args) { src = srcPath; };
 
   updateTo = v: stdPkg: altPkg:
     if lib.versionAtLeast stdPkg.version v
